@@ -1,0 +1,8 @@
+/node_modules
+*.log
+/.vscode
+npm-debug.log
+/coverage/
+/.idea/
+/mongo_log
+/db/

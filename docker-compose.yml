@@ -1,0 +1,11 @@
+version: '2'
+services:
+    node_boilerplate_rest_api:
+        build: .
+        ports:
+            - "3000:3000"
+        volumes:
+            - .:/node_boilerplate_rest_api
+            - ./db:/data/db
+        tty: true
+        working_dir: /node_boilerplate_rest_api

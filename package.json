@@ -1,0 +1,48 @@
+{
+  "name": "dev.api.ondecortar.com.br",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "NODE_ENV=test mocha test/**/*.js",
+    "start": "nodemon index.js --exec babel-node ",
+    "seed": "babel-node seeders.js",
+    "coverage": "NODE_ENV=test babel-node node_modules/.bin/istanbul cover _mocha -- -R spec --recursive test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/equipedesenv/onde-cortar-api.git"
+  },
+  "author": "Alan e Diego",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/equipedesenv/onde-cortar-api#readme",
+  "dependencies": {
+    "babel-cli": "^6.10.1",
+    "babel-preset-es2015": "^6.9.0",
+    "bcrypt": "^0.8.7",
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.15.2",
+    "consign": "^0.1.2",
+    "dotenv": "^2.0.0",
+    "express": "^4.14.0",
+    "jwt-simple": "^0.5.0",
+    "mongodb": "^2.1.18",
+    "mongoose": "^4.5.3",
+    "mongoose-beautiful-unique-validation": "^5.0.1",
+    "mongoose-seed": "https://github.com/alanhr/mongoose-seed.git",
+    "mongoose-seeder": "https://github.com/diegodesousas/mongoose-seeder.git",
+    "passport": "^0.3.2",
+    "passport-jwt": "^2.1.0",
+    "passport-local": "^1.0.0"
+  },
+  "devDependencies": {
+    "babel-register": "^6.11.5",
+    "chai": "^3.5.0",
+    "faker": "^3.1.0",
+    "mocha": "^2.5.3",
+    "nodemon": "^1.9.2",
+    "request": "^2.73.0",
+    "supertest": "^1.2.0",
+    "istanbul": "^1.1.0-alpha.1"
+  }
+}
